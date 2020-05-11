@@ -35,41 +35,41 @@ def focus_window():
 def crop(mode, img, id):
     if mode == "play":
         im = Image.open(str(img))
-        border = (80, 225, 80, 268)  # left, up, right, bottom
+        border = (80, 200, 80, 200)  # left, up, right, bottom
         cropped = ImageOps.crop(im, border)
         cropped.save(f"{id}_playside.png", "png")
     elif mode == "back":
         im = Image.open(str(img))
-        border = (80, 225, 80, 268)  # left, up, right, bottom
+        border = (80, 200, 80, 200)  # left, up, right, bottom
         cropped = ImageOps.crop(im, border)
         cropped.save(f"{id}_backside.png", "png")
 
 def final_image(id):
     im1 = Image.open(f"{id}_playside.png")
     im2 = Image.open(f"{id}_backside.png")
-    im3 = Image.open("sep.png")
+    im3 = Image.open("ressources/sep.png")
     dst = Image.new('RGB', (im1.width, im1.height + im3.height + im2.height))
     dst.paste(im2, (0, 0))
     dst.paste(im3, (0, im2.height))
     dst.paste(im1, (0, im2.height + im3.height))
-    dst.save(f"{id}_final.png", "png")
+    dst.save(f"scr/{id}_final.png", "png")
     os.remove(f"{id}_playside.png")
     os.remove(f"{id}_backside.png")
 
 
-def screen():
+def screen(url):
     clickx = test["size"]["x"] * 0.80
     clicky = test["size"]["y"] * 0.80
-    pyautogui.moveTo(clickx, clicky)
-    pyautogui.drag(-75, 0, 2, button='left')
-    id = 1
+    os.system(f'start {url}')
+    time.sleep(1.5)
+    id = 7
     save_path = f"{id}_playside.png"
     time.sleep(1.5)
     ImageGrab.grab().save(save_path)
     crop("play", save_path, id)
 
     pyautogui.moveTo(clickx, clicky)
-    pyautogui.drag(-370, 0, 2, button='left')
+    pyautogui.drag(-380, 0, 2, button='left')
     save_path = f"{id}_backside.png"
     time.sleep(1.5)
     ImageGrab.grab().save(save_path)
@@ -84,14 +84,13 @@ def screen():
 
 def main():
     global test
-    test = get_window_info("Counter-Strike: Global Offensive")
+    test = get_window_info("CS:GO MIGI")
     print("Got CSGO Window")
     while True:
         focus_window()
-        os.system('start steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20S76561198822504212A18491075281D922218567586923246')
-        print("\nMoving to the skin")
-        time.sleep(2)
-        screen()
+        url = "steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20S76561198822504212A15960641541D2649383905598941883"
+        time.sleep(1.5)
+        screen(url)
         break
 
 if __name__ == '__main__':
