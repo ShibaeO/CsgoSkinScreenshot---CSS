@@ -8,8 +8,15 @@
 # TODO
 
  - [ ] Finish base
+ - [x] add riffles
+ - [x] add smgs
+ - [x] add pistols
+ - [x] add heavys
+ - [x] add snipers
  - [ ] add knifes
  - [ ] add glove
+ - [ ] add coins
+ - [ ] add stickers
  - [ ] add items info on the separator
  - [ ] start writing API
  
