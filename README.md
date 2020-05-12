@@ -13,7 +13,7 @@
  - [x] add pistols
  - [x] add heavys
  - [x] add snipers
- - [ ] add knifes
+ - [x] add knifes -> theoretically lol
  - [ ] add glove
  - [ ] add coins
  - [ ] add stickers
