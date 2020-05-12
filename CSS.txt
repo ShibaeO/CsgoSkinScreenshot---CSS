@@ -1,2 +1,10 @@
 https://api.csgofloat.com/?url=steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20S76561198822504212A16020271804D2751174272419893859
                                steam://rungame/730/76561202255233023/+csgo_econ_action_preview%20S76561198822504212A16020271804D2751174272419893859
+                               
+fix : m4a1-s
+        duelies
+        stickers
+        gloves
+        grafities
+
+- faire les default rotatio de tout les items
