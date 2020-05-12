@@ -8,15 +8,15 @@
 # TODO
 
  - [ ] Finish base
- - [x] add riffles
+ - [x] add riffles (working but can be improve)
  - [x] add smgs
  - [x] add pistols
  - [x] add heavys
  - [x] add snipers
- - [x] add knifes -> theoretically lol
- - [ ] add glove
- - [ ] add coins
- - [ ] add stickers
- - [ ] add items info on the separator
+ - [x] add knifes -> theoretically lol (working but can be improve)
+ - [ ] add glove -> clearly not supported
+ - [ ] add coins -> half supported
+ - [ ] add stickers -> half supported
+ - [x] add items info on the separator -> theoretically lol (working but can be improve)
  - [ ] start writing API
  
