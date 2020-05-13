@@ -6,8 +6,13 @@
 	horizontal-align:center;
 	vertical-align:center;
 
+	
+	background-image: url( "file://{images}/backgrounds/inspect.svg" );
+	background-repeat: no-repeat;
+	background-size: auto 101%;
+	background-position: 50% 50%;
+	background-img-opacity: 1;
 	background-color: #2d3436;
-
 
 	transition-property: opacity, transform;
 	transition-duration: 0.25s;
