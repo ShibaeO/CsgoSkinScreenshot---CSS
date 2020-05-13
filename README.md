@@ -8,7 +8,7 @@
 # TODO
 
  - [ ] Finish base
- - [x] add Riffles & snipers (working but can be improve)
+ - [x] add Riffles & snipers
  ---------- Riffles & snipers coverage : 100%
  - [x] add smgs
  - [x] add pistols
