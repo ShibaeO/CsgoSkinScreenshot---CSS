@@ -11,7 +11,7 @@
  - [x] add riffles (working but can be improve)
  - [x] add smgs
  - [x] add pistols
-  ---------- Pistol coverage : 90% (duel_berettas model rework)
+ ---------- Pistol coverage : 90% (duel_berettas model rework)
  - [x] add heavys
  - [x] add snipers
  - [x] add knifes -> theoretically lol (working but can be improve)
