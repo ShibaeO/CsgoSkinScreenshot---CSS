@@ -15,10 +15,11 @@
  ---------- Pistol coverage : 90% (duel_berettas model rework, some guns not straight)
  - [x] add heavys
  - [x] add knifes 
-  ---------- Knifes coverage : 100% (karambit an talon can be improve but working)
+ ---------- Knifes coverage : 100% (karambit an talon can be improve but working)
  - [ ] add glove -> clearly not supported
  - [ ] add coins -> half supported
- - [ ] add stickers -> half supported
+ - [x] add stickers -> half supported
+ ---------- Stickers coverage 100%
  - [x] add items info on the separator -> theoretically lol (working but can be improve)
  - [ ] start writing API
  
