@@ -10,10 +10,10 @@ glove models stay in your dream :)
  - [ ] Finish base
  - [x] add Riffles & snipers
  ---------- Riffles & snipers coverage : 100% (some guns not straight)
- - [x] add smgs
+ - [] add smgs
  - [x] add pistols
  ---------- Pistol coverage : 90% (duel_berettas model rework, some guns not straight)
- - [x] add heavys
+ - [] add heavys
  - [x] add knifes 
  ---------- Knifes coverage : 100% (karambit an talon can be improve but working)
  - [x] add glove
