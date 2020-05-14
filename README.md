@@ -16,7 +16,8 @@ glove models stay in your dream :)
  - [x] add heavys
  - [x] add knifes 
  ---------- Knifes coverage : 100% (karambit an talon can be improve but working)
- - [ ] add glove -> clearly not supported
+ - [x] add glove
+  ---------- Gloves coverage : 100% 
  - [ ] add coins -> half supported
  - [x] add stickers -> half supported
  ---------- Stickers coverage 100%
