@@ -462,6 +462,7 @@
 			"camera_offset"   "22.91 25.82 -4.91"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "22.67 -5.83 -6.81"
+			"root_camera_fov"     "63.0"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -478,6 +479,7 @@
 			"camera_offset"   "22.91 25.82 -4.91"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "22.67 -5.83 -6.81"
+			"root_camera_fov"     "63.0"
 			"item_rotate"		"y[-50 50]"
 		}
 	}
@@ -524,6 +526,7 @@
 			"camera_offset"   "25.61 31.32 -0.24"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "12.74 -4.33 -4.45"
+			"root_camera_fov"     "60.0"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -540,6 +543,7 @@
 			"camera_offset"   "20.18 24.05 -5.65"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "14.25 -4.86 -4.55"
+			"root_camera_fov"     "60.0"
 			"item_rotate"	  "y[-50 50] x[ 0 0 ]"
 		}
 	}
@@ -555,7 +559,7 @@
 			"camera_offset"   "36.61 21.15 -5.69"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "18.45 -5.48 -5.65"
-			"root_camera_fov"     "54.0"
+			"root_camera_fov"     "66.0"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -572,6 +576,7 @@
 			"camera_offset"   "12.98 26.14 -4.14"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "19.05 -5.49 -5.65"
+			"root_camera_fov"     "66.0"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -587,6 +592,7 @@
 			"camera_offset"   "33.69 20.78 -5.72"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "14.38 -5.02 -4.65"
+			"root_camera_fov"     "53.0"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -603,6 +609,7 @@
 			"camera_offset"   "2.53 25.33 -4.66"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "14.06 -4.78 -4.75"
+			"root_camera_fov"     "53.0"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
 		}
 	}
@@ -618,6 +625,7 @@
 			"camera_offset"   "52.65 30.63 -8.85"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "23.35 -4.84 -6.95"
+			"root_camera_fov"     "62.0"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -634,6 +642,7 @@
 			"camera_offset"   "9.22 35.35 1.96"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "23.15 -4.86 -6.25"
+			"root_camera_fov"     "62.0"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
 		}
 	}
@@ -697,7 +706,7 @@
 			"camera_offset"   "46.78 29.27 -3.42"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "16.24 -3.47 -6.05"
-			"root_camera_fov"     "50"
+			"root_camera_fov"     "54"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 			"item_orient"	   "1.0 0.0 0.0"
 		}
@@ -715,7 +724,7 @@
 			"camera_offset"   "0.92 32.48 -2.51"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "10.55 -3.49 -5.45"
-			"root_camera_fov"     "50"
+			"root_camera_fov"     "54"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
 			"item_orient"	   "1.0 0.0 0.0"
 		}
