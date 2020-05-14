@@ -16,7 +16,7 @@ glove models stay in your dream :)
  - [x] add heavys
   ---------- Heavy coverage : 100% best one ^^ 
  - [x] add knifes 
- ---------- Knifes coverage : 100% (karambit an talon can be improve but working)
+ ---------- Knifes coverage : 97% (karambit an talon can be improve but working, but plug model rework)
  - [x] add glove
   ---------- Gloves coverage : 100% 
  - [ ] add coins -> half supported
