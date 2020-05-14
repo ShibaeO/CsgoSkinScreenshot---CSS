@@ -9,29 +9,20 @@
 
  - [ ] Finish base
  - [x] add Riffles & snipers
- ---------- Riffles & snipers coverage : 100% (some guns not straight)
  - [x] add smgs 
- ---------- Smgs coverage : 100%
  - [x] add pistols
- ---------- Pistol coverage : 90% (duel_berettas model rework, some guns not straight)
  - [x] add heavys
-  ---------- Heavy coverage : 100% best one ^^ 
  - [x] add knifes 
- ---------- Knifes coverage : 97% (karambit an talon can be improve but working, but plug model rework)
  - [x] add glove
-  ---------- Gloves coverage : 100% 
- - [x] add coins -> half supported
- ---------- Pin coverage : 100%
+ - [x] add coins
  - [x] add graffitis
- ---------- Graffitis coverage : 100%
- - [x] add stickers -> half supported
- ---------- Stickers coverage : 100%
+ - [x] add stickers
  - [x] add items info on the separator -> theoretically lol (working but can be improve)
  - [ ] start writing API
  
-# test
+# Coverage
 
-|          | Riffle                          | Sniper                          | SMG                             | Pistol                          | Heavy                           | Knife                           | Pin                             | Graffiti                        | Sticker                         | Glove                           |
-|----------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|
-| Coverage | 100%                            | 100%                            | 100%                            | 90%                             | 100%                            | 95%                             | 100%                            | 100%                            | 100%                            | 100%                            |
-| Suported |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |
+|          | Riffle | Sniper | SMG  | Pistol | Heavy | Knife | Pin  | Graffiti | Sticker | Glove |
+|----------|--------|--------|------|--------|-------|-------|------|----------|---------|-------|
+| Coverage | 100%   | 100%   | 100% | 90%    | 100%  | 95%   | 100% | 100%     | 100%    | 100%  |
+| Suported | ✔️      | ✔️      | ✔️    | ✔️      | ✔️     | ✔️     | ✔️    | ✔️        | ✔️       | ✔️     |
