@@ -9,12 +9,13 @@
 
  - [ ] Finish base
  - [x] add Riffles & snipers
- ---------- Riffles & snipers coverage : 100%
+ ---------- Riffles & snipers coverage : 100% (some guns not straight)
  - [x] add smgs
  - [x] add pistols
- ---------- Pistol coverage : 90% (duel_berettas model rework)
+ ---------- Pistol coverage : 90% (duel_berettas model rework, some guns not straight)
  - [x] add heavys
- - [x] add knifes -> theoretically lol (working but can be improve)
+ - [x] add knifes 
+  ---------- Knifes coverage : 100% (karambit an talon can be improve but working)
  - [ ] add glove -> clearly not supported
  - [ ] add coins -> half supported
  - [ ] add stickers -> half supported
