@@ -29,3 +29,9 @@
  - [x] add items info on the separator -> theoretically lol (working but can be improve)
  - [ ] start writing API
  
+# test
+
+|          | Riffle                          | Sniper                          | SMG                             | Pistol                          | Heavy                           | Knife                           | Pin                             | Graffiti                        | Sticker                         | Glove                           |
+|----------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|---------------------------------|
+| Coverage | 100%                            | 100%                            | 100%                            | 90%                             | 100%                            | 95%                             | 100%                            | 100%                            | 100%                            | 100%                            |
+| Suported |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |   StartFragment✔️<br>EndFragment |
