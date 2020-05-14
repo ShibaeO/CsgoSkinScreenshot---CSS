@@ -1146,7 +1146,7 @@
 			"camera_offset"   "45.75 46.27 -10.29"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "21.82 -4.24 -5.05"
-			"root_camera_fov"     "54.0"
+			"root_camera_fov"     "47.0"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -1163,6 +1163,7 @@
 			"camera_offset"   "-1.74 11.79 7.70"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "19.52 -4.35 -4.95"
+			"root_camera_fov"     "47.0"
 			"item_rotate"	  "y[-20 20] x[ 0 0 ]"
 			"camera_preset_add"   "pos[15.27 27.31 3.09] pivot[19.52 -4.35 -4.95] orient[14.13 -82.35 0.00]" // for sticker slots >1
 		}
@@ -1179,7 +1180,7 @@
 			"camera_offset"   "36.59 35.41 -9.60"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "22.15 -4.57 -4.24"
-			"root_camera_fov"     "54.0"
+			"root_camera_fov"     "42.0"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -1196,6 +1197,7 @@
 			"camera_offset"   "20.61 26.25 1.39"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "21.76 -4.34 -3.75"
+			"root_camera_fov"     "42.0"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
 		}
 	}
@@ -1211,6 +1213,7 @@
 			"camera_offset"   "59.13 36.53 -5.70"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "21.85 -5.44 -4.95"
+			"root_camera_fov"     "45.0"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -1226,6 +1229,7 @@
 		{
 			"camera_offset"   "15.31 30.19 -2.10"
 			"camera_orient"   "0.0 -90 0.00"
+			"root_camera_fov"     "45.0"
 			"orbit_pivot"     "21.85 -5.44 -4.95"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
 		}
@@ -1252,6 +1256,7 @@
 		"rule"
 		{
 			"model" "v_mach_m249para"
+			"root_camera_fov"     "54.0"
 			"sticker_preview" "1"
 		}
 		"config"
