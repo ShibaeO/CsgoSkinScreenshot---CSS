@@ -3041,7 +3041,7 @@
 			"light_ambient"				"[.05 .05 .05]"
 			"light_directional_add" 	"rgb[15 34 62] dir[0 -1 -0.2]"
 			"root_mdl"					"models/sprays/pedestal_sprays.mdl"
-			"root_anim"					"ACT_IDLE_INSPECT_START"		
+			"root_anim"					"ACT_IDLE_INSPECT_START"
 			"root_anim_loop"				"ACT_IDLE_INSPECT_LOOP"
 			"light_directional_clearall" "1"
 			"light_directional_add"      "rgb{0.06 0.13 0.24} dir[0.00 -1.00 -0.20] rot[0.0 0.0 0.0] flicker[0.00 0.00 0.00 0.00]"
@@ -3059,6 +3059,7 @@
 			"shadow_light_znear"       "58.6"
 			"shadow_light_zfar"       "149.1"
 			"shadow_light_atten_farz"       "298.2"
+			"root_camera_fov"     "90"
 			"light_ambient"              "[0.05 0.05 0.05]"
 			"item_rotate"				 "x[-0 0] y[-0 0]"
 		}
