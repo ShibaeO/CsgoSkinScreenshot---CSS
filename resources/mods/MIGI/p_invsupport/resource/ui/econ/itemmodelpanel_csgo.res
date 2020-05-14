@@ -109,7 +109,7 @@
 			"camera_offset"   "44.64 23.04 -1.77"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "18.10 0.30 -4.33"
-			"root_camera_fov"     "40"
+			"root_camera_fov"     "43"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -126,7 +126,7 @@
 			"camera_offset"   "1.77 11.36 -1.77"
 			"camera_orient"   "10.38 -39.95 0.00"
 			"orbit_pivot"     "17.04 -1.43 -5.42"
-			"root_camera_fov"     "40"
+			"root_camera_fov"     "43"
 			"item_rotate"	  "y[-15 15] x[ 0 0 ]"
 
 			// Presets start here when called from JS thier index starts at 1
@@ -179,7 +179,7 @@
 			"camera_offset"   "23.61 18.92 -4.59"
 			"camera_orient"   "-2.36 -89.5 0.00"
 			"orbit_pivot"     "17.71 -3.02 -3.65"
-			"root_camera_fov"     "40"
+			"root_camera_fov"     "43"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -196,7 +196,7 @@
 			"camera_offset"   "8.06 14.59 -1.19"
 			"camera_orient"   "7.27 -61.27 0.00"
 			"orbit_pivot"     "17.71 -3.01 -3.75"
-			"root_camera_fov"     "40"	
+			"root_camera_fov"     "43"
 			"item_rotate"	  "y[-30 30] x[ 0 0 ]"
 		}
 	}
@@ -212,7 +212,7 @@
 			"camera_offset"   "30.86 17.73 -1.32"
 			"camera_orient"   "5.11 -89.5 0.00"
 			"orbit_pivot"     "18.64 -3.89 -3.54"
-			"root_camera_fov"     "40"
+			"root_camera_fov"     "43"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -229,7 +229,7 @@
 			"camera_offset"   "12.39 14.27 -2.19"
 			"camera_orient"   "4.88 -71.35 0.00"
 			"orbit_pivot"     "18.55 -3.98 -3.84"
-			"root_camera_fov"     "40"
+			"root_camera_fov"     "43"
 			"item_rotate"	  "y[-50 20] x[ 0 0 ]"
 		}
 	}
@@ -245,7 +245,7 @@
 			"camera_offset"   "42.48 22.31 -4.45"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "22.45 -2.95 -4.15"
-			"root_camera_fov"     "40"
+			"root_camera_fov"     "45"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -262,7 +262,7 @@
 			"camera_offset"   "5.64 15.81 -1.84"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "20.79 -3.49 -4.96"
-			"root_camera_fov"     "40"
+			"root_camera_fov"     "45"
 			"item_rotate"	  "y[-20 40] x[ 0 0 ]"
 		}
 	}
@@ -344,7 +344,7 @@
 			"camera_offset"   "44.57 18.35 -5.47"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "20.88 -5.10 -6.23"
-			"root_camera_fov"     "60"
+			"root_camera_fov"     "63"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -361,7 +361,7 @@
 			"camera_offset"   "4.23 17.46 3.35"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "20.49 -5.24 -6.61"
-			"root_camera_fov"     "60"
+			"root_camera_fov"     "63"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
 		}
 	}
@@ -377,7 +377,7 @@
 			"camera_offset"   "34.41 18.87 -3.89"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "17.83 -2.75 -3.85"
-			"root_camera_fov"     "55"
+			"root_camera_fov"     "43"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -394,7 +394,7 @@
 			"camera_offset"   "8.68 19.28 -0.81"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "17.83 -2.75 -3.85"
-			"root_camera_fov"     "40"
+			"root_camera_fov"     "43"
 			"item_rotate"	  "y[-20 50] x[ 0 0 ]"
 		}
 	}
@@ -410,7 +410,7 @@
 			"camera_offset"   "36.93 22.88 -3.42"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "18.77 -3.75 -4.15"
-			"root_camera_fov"     "40"
+			"root_camera_fov"     "45"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -428,7 +428,7 @@
 			"camera_offset"   "23.94 17.51 1.27"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "18.77 -3.75 -4.15"
-			"root_camera_fov"     "40"
+			"root_camera_fov"     "45"
 			"item_rotate"	  "y[-20 20] x[ 0 0 ]"
 
 			// Presets start here when called from JS thier index starts at 1
@@ -664,7 +664,7 @@
 			"camera_offset"   "48.96 37.18 -5.19"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "18.35 -5.10 -5.58"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -681,7 +681,7 @@
 			"camera_offset"   "4.53 30.22 2.44"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "17.24 -5.55 -5.08"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
 		}
 	}
@@ -697,8 +697,9 @@
 			"camera_offset"   "46.78 29.27 -3.42"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "16.24 -3.47 -6.05"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
+			"item_orient"	   "1.0 0.0 0.0"
 		}
 	}
 
@@ -714,8 +715,9 @@
 			"camera_offset"   "0.92 32.48 -2.51"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "10.55 -3.49 -5.45"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
+			"item_orient"	   "1.0 0.0 0.0"
 		}
 	}
 
@@ -731,7 +733,7 @@
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "25.97 -5.07 -6.40"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"camera_preset_add"   "pos[25.28 30.75 -4.87] pivot[26.73 -5.19 -6.31] orient[2.29 -87.69 0.00] fov[54.3]" //1 sideview for update panel
 			"camera_preset_add"   "pos[40.49 27.39 -7.87] pivot[26.73 -5.19 -6.31] orient[-2.52 -112.90 0.00] fov[54.3]"
 		}
@@ -748,7 +750,7 @@
 			"camera_offset"   "49.43 35.84 -7.12"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "20.12 -6.07 -7.05"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -765,7 +767,7 @@
 			"camera_offset"   "-0.40 40.13 3.84"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "18.22 -6.28 -6.85"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"item_rotate"	  "y[-50 30] x[ 0 0 ]"
 		}
 	}
@@ -782,7 +784,7 @@
 			"camera_offset"   "48.21 34.63 -7.48"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "20.28 -5.29 -5.85"
-			"root_camera_fov"     "43"
+			"root_camera_fov"     "50"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -799,7 +801,7 @@
 			"camera_offset"   "-0.06 30.73 -4.83"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "17.69 -6.83 -4.78"
-			"root_camera_fov"     "43"
+			"root_camera_fov"     "50"
 			"item_rotate"	  "y[-50 30] x[ 0 0 ]"
 		}
 	}
@@ -815,7 +817,7 @@
 			"camera_offset"   "50.05 35.62 -10.30"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "19.55 -5.14 -6.56"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "48"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
 	}
@@ -832,7 +834,7 @@
 			"camera_offset"   "17.08 35.99 5.97"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "16.15 -5.57 -6.65"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "48"
 			"item_rotate"	  "y[-50] x[ 0 0 ]"
 		}
 	}
@@ -848,7 +850,7 @@
 			"camera_offset"   "51.17 -49.90 -9.69"
 			"camera_orient"   "0.0 -180 0.00"
 			"orbit_pivot"     "-3.04 -18.01 -4.05"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 
 			"light_directional_clearall" "1"
@@ -880,7 +882,7 @@
 		{
 			"camera_offset"   "39.64 -4.46 -1.39"
 			"camera_orient"   "0.0 -180 0.00"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"orbit_pivot"     "-3.31 -12.12 -4.65"
 			"item_rotate"	  "y[-50 30] x[ 0 0 ]"
 		}
@@ -927,7 +929,7 @@
 		{
 			"camera_offset"   "58.72 35.38 -8.03"
 			"camera_orient"   "0.0 -90 0.00"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"orbit_pivot"     "24.16 -5.12 -4.76"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
@@ -945,7 +947,7 @@
 			"camera_offset"   "18.88 40.54 3.71"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "17.14 -4.67 -4.27"
-			"root_camera_fov"     "45"
+			"root_camera_fov"     "50"
 			"item_rotate"	  "y[-40 20] x[ 0 0 ]"
 		}
 	}
@@ -961,8 +963,9 @@
 			"camera_offset"   "51.36 31.68 -7.87"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "24.18 -5.26 -4.86"
-			"root_camera_fov"     "57.0"
+			"root_camera_fov"     "56.0"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
+			"item_orient"	   "0.0 0.0 0.0"
 		}
 	}
 
@@ -978,8 +981,9 @@
 			"camera_offset"   "9.70 29.05 -3.81"
 			"camera_orient"   "0.0 -90 0.00"
 			"orbit_pivot"     "17.97 -5.07 -5.86"
-			"root_camera_fov"     "57.0"
+			"root_camera_fov"     "55.0"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
+			"item_orient"	   "0. 0.0 0.0"
 		}
 	}
 
@@ -993,9 +997,10 @@
 		{
 			"camera_offset"   "44.85 46.66 -5.82"
 			"camera_orient"   "0.0 -90 0.00"
-			"root_camera_fov"     "47"
+			"root_camera_fov"     "53"
 			"orbit_pivot"     "23.28 -5.16 -4.85"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
+			"item_orient"	   "0.0 0.0 0.0"
 		}
 	}
 
@@ -1010,9 +1015,11 @@
 		{
 			"camera_offset"   "31.30 30.88 -3.67"
 			"camera_orient"   "0.0 -90 0.00"
-			"root_camera_fov"     "47"
+			"root_camera_fov"     "53"
 			"orbit_pivot"     "17.64 -5.15 -4.85"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
+			"item_orient"	   "0.0 0.0 0.0"
+			"item_orient"	   "0.0 0.0 0.0"
 		}
 	}
 
@@ -1026,7 +1033,7 @@
 		{
 			"camera_offset"   "58.68 44.05 -1.28"
 			"camera_orient"   "0.0 -90 0.00"
-			"root_camera_fov"     "50"
+			"root_camera_fov"     "53"
 			"orbit_pivot"     "24.93 -5.57 -4.48"
 			"item_rotate"	  "y[-360 360] x[ 0 0 ]"
 		}
@@ -1043,7 +1050,7 @@
 		{
 			"camera_offset"   "12.43 24.99 1.25"
 			"camera_orient"   "0.0 -90 0.00"
-			"root_camera_fov"     "50"
+			"root_camera_fov"     "55"
 			"orbit_pivot"     "20.75 -6.94 -5.07"
 			"item_rotate"	  "y[-40 30] x[ 0 0 ]"
 		}
@@ -1391,7 +1398,7 @@
 			"light_directional_add"      "rgb{0.20 0.20 0.22} dir[-0.40 -0.52 -0.76] rot[0.0 0.0 0.0] flicker[0.00 0.00 0.00 0.00]"
 			"shadow_light_offset"        "-15.70 10.95 19.80"
 			"shadow_light_orient"        "44.39 -51.80 0.00"
-			"shadow_light_brightness"    "1.52"
+			"shadow_light_brightness"    "1"
 			"shadow_light_color"         "[1.00 1.00 1.00]"
 			"shadow_light_rotation"      "[0.00 0.00 0.00]"
 			"shadow_light_flicker"       "[0.00 0.00 0.00 0.00]"
@@ -1401,14 +1408,11 @@
 			"shadow_light_zfar"       "28.7"
 			"shadow_light_atten_farz"       "57.4"
 			"light_ambient"              "[0.48 0.48 0.48]"
-			"root_mdl"					"models\weapons\pedestal_sticker_panorama.mdl"
-			"root_anim"					"ACT_IDLE_INSPECT_START"		
-			"root_anim_loop"				"ACT_IDLE_INSPECT_LOOP"
-			"mergemdl_add"			"models/weapons/ct_arms_fbi.mdl"
-			"camera_offset"   "1.44 1.17 -0.16"
-			"camera_orient"   "-0.07 -126.05 0.00"
-			"orbit_pivot"     "-3.10 -5.06 -0.15"
-			"item_rotate"				    "y[0 0] x[0 0]"
+			"camera_offset"					"50 0 0"
+			"camera_orient"					"0 -180 0"
+	        "orbit_pivot"					"0 0 0"
+			"item_rotate"				    "y[-360 360] x[0 0]"
+			"root_camera_fov"     				"20"
 		}
 	}
 
@@ -1439,12 +1443,13 @@
 			"shadow_light_atten_farz"       "43.2"
 			"light_ambient"              "[0.31 0.31 0.31]"
 			"camera_offset"   "2.39 -23.57 3.19"
-			"camera_orient"   "0.0 90 0.00"
+			"camera_orient"   "0.0 90.0 0.0"
 			"orbit_pivot"     "-0.15 0.49 3.61"
 			"root_camera_fov"     "54.0"
 			"orbit_pivot"     "0.05 0.52 3.61"
 			"root_camera_fov"     "54.0"
-			"item_rotate"				    "y[-360 360] x[0 0]"
+			"item_rotate"				    "y[-360 360] x[-0 0]"
+			"item_orient"	   "0 0.0 3.0"
 		}
 	}
 
@@ -3168,6 +3173,21 @@
 			"weaponmergemdls_add" "models/weapons/stattrack_cut_inspect_small.mdl"
 		}
 	}	
+
+
+	"skeleton"
+	{
+		"rule"
+		{
+			"model" "w_knife_skeleton"
+		}
+		"config"
+		{
+			"camera_offset"   "-3.03 2.90 0.40"
+			"camera_orient"   "0.0 -90 0.00"
+			"root_camera_fov"     "20"
+		}
+	}
 
 	
 	"uid"
