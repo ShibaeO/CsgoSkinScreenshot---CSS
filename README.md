@@ -13,7 +13,8 @@ glove models stay in your dream :)
  - [ ] add smgs
  - [x] add pistols
  ---------- Pistol coverage : 90% (duel_berettas model rework, some guns not straight)
- - [ ] add heavys
+ - [x] add heavys
+  ---------- Heavy coverage : 100% best one ^^ 
  - [x] add knifes 
  ---------- Knifes coverage : 100% (karambit an talon can be improve but working)
  - [x] add glove
