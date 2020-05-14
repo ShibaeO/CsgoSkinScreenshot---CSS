@@ -3,7 +3,7 @@
 > big **love** to **Kaumu** who helped me a lot :)
 
 > **res must be** = 1920x1080
-> glove models stay in your dream :)
+> **glove** models stay in your dream :)
 
 # TODO
 
