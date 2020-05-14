@@ -20,9 +20,12 @@
  ---------- Knifes coverage : 97% (karambit an talon can be improve but working, but plug model rework)
  - [x] add glove
   ---------- Gloves coverage : 100% 
- - [ ] add coins -> half supported
+ - [x] add coins -> half supported
+ ---------- Pin coverage : 100%
+ - [x] add graffitis
+ ---------- Graffitis coverage : 100%
  - [x] add stickers -> half supported
- ---------- Stickers coverage 100%
+ ---------- Stickers coverage : 100%
  - [x] add items info on the separator -> theoretically lol (working but can be improve)
  - [ ] start writing API
  
