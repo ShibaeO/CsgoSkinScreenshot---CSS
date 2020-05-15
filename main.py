@@ -1,240 +1,68 @@
-import json
-import os
+from config import huey
+from flask import Flask, request
+from flask import jsonify, send_from_directory
+from worker import main
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 import time
-from datetime import datetime
+import redis
+r = redis.Redis(host='localhost', port=6379, db=0)
 
-import pyautogui
-import requests
-import win32gui
-from PIL import ImageGrab, Image, ImageOps, ImageDraw, ImageFont
+app = Flask(__name__)
 
+limiter = Limiter(app,
+                  key_func=get_remote_address,
+                  )
+limiter.init_app(app)
 
-def get_window_info(window_name):
-    window = {}
+@app.route("/inspect")
+@limiter.limit("5/minute")
+def index():
 
-    def callback(hwnd, extra):
-        rect = win32gui.GetWindowRect(hwnd)
-        x = rect[0]
-        y = rect[1]
-        w = rect[2] - x
-        h = rect[3] - y
-        if win32gui.GetWindowText(hwnd) == window_name:
-            # print("Window \"%s\":" % win32gui.GetWindowText(hwnd))
-            # print("\tLocation: (%d, %d)" % (x, y))
-            # print("\t    Size: (%d, %d)" % (w, h))
-            location = {"x": x, "y": y}
-            size = {"x": w, "y": h}
-            window["location"] = location
-            window["size"] = size
+    if request.args.get("n"):
 
-    win32gui.EnumWindows(callback, None)
-    return window
+        a = request.args.get("n").split(" ")
+        url = f"{a[0]}+{a[1]}%20{a[2]}"
+        id = a[2]
 
+        if len(url) < 110:
+            return jsonify(success=False,
+                           error="Invalid link provided",
+                           total_screenshot=int(r.get('total_scr')),
+                           queue_lenght=int(r.get('queue')),
+                           inspect_link=url,
+                           )
+        else:
 
-def focus_window():
-    startx = super_Var_lol["size"]["x"] / 2
-    clickx = super_Var_lol["location"]["x"] + startx
-    clicky = super_Var_lol["location"]["y"] + 5
-    pyautogui.moveTo(clickx, clicky)
-    time.sleep(0.1)
-    pyautogui.click()
+            r.incr("queue")
+            main(url, id)
 
+            return jsonify(success=True,
+                            total_screenshot=int(r.get('total_scr')),
+                            queue_lenght=int(r.get('queue')),
+                            inspect_link=request.args.get("n"),
+                            image_link=f"/image/{id}.png",
+                            )
 
-def crop(mode, img, id):
-    if mode == "play":
-        im = Image.open(str(img))
-        border = (80, 230, 80, 180)  # left, up, right, bottom
-        cropped = ImageOps.crop(im, border)
-        cropped.save(f"{id}_playside.png", "png")
-    elif mode == "back":
-        im = Image.open(str(img))
-        border = (80, 250, 80, 180)  # left, up, right, bottom
-        cropped = ImageOps.crop(im, border)
-        cropped.save(f"{id}_backside.png", "png")
+    return jsonify(success=False,
+                   error="No inspect link provided",
+                   total_screenshot=int(r.get('total_scr')),
+                   queue_lenght=int(r.get('queue')),
+                   )
 
 
-def crop_knife(mode, img, id):
-    if mode == "play":
-        im = Image.open(str(img))
-        border = (640, 81, 640, 81)  # left, up, right, bottom
-        cropped = ImageOps.crop(im, border)
-        cropped = cropped.transpose(Image.ROTATE_90)
-        cropped.save(f"{id}_playside.png", "png")
-    elif mode == "back":
-        im = Image.open(str(img))
-        border = (640, 81, 640, 81)  # left, up, right, bottom
-        cropped = ImageOps.crop(im, border)
-        cropped = cropped.transpose(Image.ROTATE_270)
-        cropped.save(f"{id}_backside.png", "png")
-
-def crop_glove(mode, img, id):
-    if mode == "play":
-        im = Image.open(str(img))
-        border = (440, 100, 440, 300)  # left, up, right, bottom
-        cropped = ImageOps.crop(im, border)
-        cropped.save(f"{id}_playside.png", "png")
-    elif mode == "back":
-        im = Image.open(str(img))
-        border = (440, 100, 440, 300)  # left, up, right, bottom
-        cropped = ImageOps.crop(im, border)
-        cropped.save(f"{id}_backside.png", "png")
-
-def crop_talon(mode, img, id):
-    print(img)
-    if mode == "back":
-        img = Image.open(img)
-        img = img.rotate(-90)
-        border = (456, 340, 474, 140)  # left, up, right, bottom
-        im = ImageOps.crop(img, border)
-        im.save(f"{id}_backside.png", "png")
-
-    elif mode == "play":
-        img = Image.open(img)
-        img = img.rotate(90)
-        border = (456, 340, 474, 140)  # left, up, right, bottom
-        im = ImageOps.crop(img, border)
-        im.save(f"{id}_playside.png", "png")
+@app.route("/image/<path:filename>")
+def show_image(filename):
+    return send_from_directory("scr", filename, mimetype='image/jpeg',)
 
 
-def crop_sticker_final(img, id, data):
-    img = Image.open(img)
-    border = (400, 200, 400, 200)  # left, up, right, bottom
-    im = ImageOps.crop(img, border)
-    im.save(f"{id}_playside.png", "png")
+@app.errorhandler(429)
+def ratelimit_handler():
+    return jsonify(success=False,
+                   error="Too many request calm down :)",
+                   total_screenshot=int(r.get('total_scr')),
+                   queue_lenght=int(r.get('queue')),
+                   )
 
-    fullName = data["iteminfo"]["full_item_name"].replace("★", "")
-    sep = Image.new('RGB', (1760, 60), color=(24, 128, 122))
-    d = ImageDraw.Draw(sep)
-    font = ImageFont.truetype("ressources/Bison.ttf", 25)
-    d.multiline_text((20, 14), f"{fullName}        Shibaeo <3", fill=(255, 255, 0), spacing=4, align="left", font=font)
-    sep.save('ressources/sep.png', "png")
-
-    im1 = Image.open(f"{id}_playside.png")
-    im3 = Image.open("ressources/sep.png")
-    dst = Image.new('RGB', (im1.width, im1.height + im3.height))
-    dst.paste(im1, (0, 0))
-    dst.paste(im3, (0, im1.height))
-    dst.save(f"scr/{id}.png", "png")
-    os.remove(f"{id}_playside.png")
-    os.remove(f"{id}_backside.png")
-    os.remove(f"ressources/sep.png")
-
-
-def final_image(id, data):
-    paintID = data["iteminfo"]["paintseed"]
-    floatVal = data["iteminfo"]["floatvalue"]
-    fullName = data["iteminfo"]["full_item_name"].replace("★", "")
-    sep = Image.new('RGB', (1760, 60), color=(24, 128, 122))
-    d = ImageDraw.Draw(sep)
-    font = ImageFont.truetype("ressources/Bison.ttf", 25)
-    d.multiline_text((20, 14), f"{fullName}        PaintID : {paintID}        float : {floatVal}        Shibaeo <3",
-                     fill=(255, 255, 0), spacing=4, align="left", font=font)
-    sep.save('ressources/sep.png', "png")
-
-    im1 = Image.open(f"{id}_playside.png")
-    im2 = Image.open(f"{id}_backside.png")
-    im3 = Image.open("ressources/sep.png")
-    dst = Image.new('RGB', (im1.width, im1.height + im3.height + im2.height))
-    dst.paste(im1, (0, 0))
-    dst.paste(im3, (0, im2.height))
-    dst.paste(im2, (0, im2.height + im3.height))
-    dst.save(f"scr/{id}.png", "png")
-    os.remove(f"{id}_playside.png")
-    os.remove(f"{id}_backside.png")
-    os.remove(f"ressources/sep.png")
-
-
-def screen(url, id):
-    infoUrl = f"https://api.csgofloat.com/?url={url}"
-    data = json.loads(requests.get(infoUrl).text)
-
-    weaponType = data["iteminfo"]["weapon_type"]
-
-    clickx = super_Var_lol["size"]["x"] * 0.80
-    clicky = super_Var_lol["size"]["y"] * 0.80
-    os.system(f'start {url}')
-    time.sleep(2.5)
-
-    save_path = f"{id}_playside.png"
-    ImageGrab.grab().save(save_path)
-    time.sleep(1)
-
-    pyautogui.moveTo(clickx, clicky)
-    pyautogui.drag(-380, 0, 2, button='left')
-    save_path = f"{id}_backside.png"
-    time.sleep(1)
-    ImageGrab.grab().save(save_path)
-
-
-    if weaponType == "Karambit" or weaponType == "Talon Knife":
-        save_path = f"{id}_backside.png"
-        crop_talon("back", save_path, id)
-        save_path = f"{id}_playside.png"
-        crop_talon("play", save_path, id)
-        time.sleep(1)
-        final_image(id, data)
-
-    elif weaponType == "Bayonet" or weaponType == "Karambit" or weaponType == "Shadow Daggers" or "Knife" in weaponType:
-        save_path = f"{id}_playside.png"
-        crop_knife("play", save_path, id)
-        save_path = f"{id}_backside.png"
-        crop_knife("back", save_path, id)
-        time.sleep(1)
-        final_image(id, data)
-
-    elif weaponType == "Sticker" or "Pin" in weaponType or "Graffiti" in weaponType:
-        print("pin")
-        save_path = f"{id}_playside.png"
-        crop_sticker_final(save_path, id, data)
-
-    elif "Gloves" in weaponType or "Wraps" in weaponType:
-        save_path = f"{id}_playside.png"
-        crop_glove("play", save_path, id)
-        save_path = f"{id}_backside.png"
-        crop_glove("back", save_path, id)
-        time.sleep(1)
-        final_image(id, data)
-
-    else:
-        save_path = f"{id}_playside.png"
-        crop("play", save_path, id)
-        save_path = f"{id}_backside.png"
-        crop("back", save_path, id)
-        time.sleep(1)
-        final_image(id, data)
-
-
-def url_parse(url):
-    splitedUrl = url.split("/")
-    parsedUrl = splitedUrl[5].replace("+csgo_econ_action_preview%20", "")
-    return parsedUrl
-
-
-def main(url, id):
-    global super_Var_lol
-    super_Var_lol = get_window_info("CS:GO MIGI")
-    print("Got CSGO Window")
-    print(f"[+] {datetime.now().strftime('%d/%m/%Y %H:%M:%S')} -----> Taking screenshot of item id : {id}")
-    while True:
-        focus_window()
-        screen(url, id)
-
-        break
-#place url here :
-url = [
-    "",
-]
-#url_end
-
-
-if __name__ == '__main__':
-    totalTime = 0
-    for x in url:
-        id = url_parse(x)
-        start_time = time.time()
-        main(x, id)
-        end_time = time.time()
-        totalTime += end_time - start_time
-        print(f"screenshot taken in : {end_time - start_time} s\n   ")
-
-    print(f"total screnshots time : {totalTime}")
+if __name__ == "__main__":
+    app.run(host="192.168.1.30")
