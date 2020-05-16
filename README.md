@@ -19,7 +19,12 @@
  - [x] add stickers
  - [x] add items info on the separator -> theoretically lol (working but can be improve)
  - [x] start writing API
- - [ ] rework all knife models to avoid post production
+ - [x] rework all knife models to avoid post production
+ - [ ] rework but plug
+ - [ ] rework duelis
+ - [ ] fix stickers
+ - [ ] increase image quality by less croping and more fov
+ - [ ] new custom separator
  - [ ] add simple api token system for rate limit
  
 # Coverage
