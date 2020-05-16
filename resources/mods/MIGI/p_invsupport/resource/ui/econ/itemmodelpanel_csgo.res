@@ -1457,13 +1457,11 @@
 			"shadow_light_atten_farz"       "43.2"
 			"light_ambient"              "[0.31 0.31 0.31]"
 			"camera_offset"   "2.39 -23.57 3.19"
-			"camera_orient"   "0.0 90.0 0.0"
-			"orbit_pivot"     "-0.15 0.49 3.61"
-			"root_camera_fov"     "54.0"
-			"orbit_pivot"     "0.05 0.52 3.61"
-			"root_camera_fov"     "54.0"
+			"camera_orient"   "0.0 100 0.0"
+			"orbit_pivot"     "0.0 0.0 5.0"
+			"root_camera_fov"     "37.0"
 			"item_rotate"				    "y[-360 360] x[-0 0]"
-			"item_orient"	   "0 0.0 3.0"
+			//"item_orient"	   "15.0 0.0 93.0"
 		}
 	}
 
