@@ -7,7 +7,7 @@
 
 # TODO
 
- - [ ] Finish base
+ - [x] Finish base
  - [x] add Riffles & snipers
  - [x] add smgs 
  - [x] add pistols
@@ -18,7 +18,9 @@
  - [x] add graffitis
  - [x] add stickers
  - [x] add items info on the separator -> theoretically lol (working but can be improve)
- - [ ] start writing API
+ - [x] start writing API
+ - [ ] rework all knife models to avoid post production
+ - [ ] add simple api token system for rate limit
  
 # Coverage
 
