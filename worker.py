@@ -2,12 +2,15 @@ import json
 import os
 import time
 from datetime import datetime
-from config import huey
+
 import pyautogui
+import redis
 import requests
 import win32gui
 from PIL import ImageGrab, Image, ImageOps, ImageDraw, ImageFont
-import redis
+
+from config import huey
+
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 
@@ -58,15 +61,13 @@ def crop(mode, img, id):
 def crop_knife(mode, img, id):
     if mode == "play":
         im = Image.open(str(img))
-        border = (640, 81, 640, 81)  # left, up, right, bottom
+        border = (330, 60, 180, 260)  # left, up, right, bottom
         cropped = ImageOps.crop(im, border)
-        cropped = cropped.transpose(Image.ROTATE_90)
         cropped.save(f"{id}_playside.png", "png")
     elif mode == "back":
         im = Image.open(str(img))
-        border = (640, 81, 640, 81)  # left, up, right, bottom
+        border = (180, 60, 330, 260)  # left, up, right, bottom
         cropped = ImageOps.crop(im, border)
-        cropped = cropped.transpose(Image.ROTATE_270)
         cropped.save(f"{id}_backside.png", "png")
 
 def crop_glove(mode, img, id):
@@ -81,7 +82,7 @@ def crop_glove(mode, img, id):
         cropped = ImageOps.crop(im, border)
         cropped.save(f"{id}_backside.png", "png")
 
-def crop_talon(mode, img, id):
+"""def crop_talon(mode, img, id):
     print(img)
     if mode == "back":
         img = Image.open(img)
@@ -97,7 +98,7 @@ def crop_talon(mode, img, id):
         im = ImageOps.crop(img, border)
         im.save(f"{id}_playside.png", "png")
 
-
+"""
 def crop_sticker_final(img, id, data):
     img = Image.open(img)
     border = (400, 200, 400, 200)  # left, up, right, bottom
@@ -167,16 +168,16 @@ def screen(url, id):
     time.sleep(1)
     ImageGrab.grab().save(save_path)
 
+    """    if weaponType == "Karambit" or weaponType == "Talon Knife":
+            save_path = f"{id}_backside.png"
+            crop_talon("back", save_path, id)
+            save_path = f"{id}_playside.png"
+            crop_talon("play", save_path, id)
+            time.sleep(1)
+            final_image(id, data)
+    """
 
-    if weaponType == "Karambit" or weaponType == "Talon Knife":
-        save_path = f"{id}_backside.png"
-        crop_talon("back", save_path, id)
-        save_path = f"{id}_playside.png"
-        crop_talon("play", save_path, id)
-        time.sleep(1)
-        final_image(id, data)
-
-    elif weaponType == "Bayonet" or weaponType == "Karambit" or weaponType == "Shadow Daggers" or "Knife" in weaponType:
+    if weaponType == "Bayonet" or weaponType == "Karambit" or weaponType == "Shadow Daggers" or "Knife" in weaponType or weaponType == "Karambit":
         save_path = f"{id}_playside.png"
         crop_knife("play", save_path, id)
         save_path = f"{id}_backside.png"
