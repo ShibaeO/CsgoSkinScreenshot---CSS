@@ -20,7 +20,7 @@
  - [x] add items info on the separator -> theoretically lol (working but can be improve)
  - [x] start writing API
  - [x] rework all knife models to avoid post production
- - [ ] rework but plug
+ - [x] rework but plug
  - [ ] rework duelis
  - [ ] fix stickers
  - [ ] increase image quality by less croping and more fov
@@ -31,5 +31,5 @@
 
 |          | Riffle | Sniper | SMG  | Pistol | Heavy | Knife | Pin  | Graffiti | Sticker | Glove |
 |----------|--------|--------|------|--------|-------|-------|------|----------|---------|-------|
-| Coverage | 100%   | 100%   | 100% | 90%    | 100%  | 95%   | 100% | 100%     | 100%    | 100%  |
+| Coverage | 100%   | 100%   | 100% | 90%    | 100%  | 100%   | 100% | 100%     | 100%    | 100%  |
 | Suported | ✔️      | ✔️      | ✔️    | ✔️      | ✔️     | ✔️     | ✔️    | ✔️        | ✔️       | ✔️     |
