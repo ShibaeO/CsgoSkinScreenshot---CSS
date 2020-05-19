@@ -17,7 +17,7 @@
  - [x] add coins
  - [x] add graffitis
  - [x] add stickers
- - [x] add items info on the separator -> theoretically lol (working but can be improve)
+ - [x] add items info on the separator
  - [x] start writing API
  - [x] rework all knife models to avoid post production
  - [x] rework but plug
