@@ -23,8 +23,8 @@
  - [x] rework but plug
  - [ ] rework duelis
  - [ ] fix stickers
- - [ ] increase image quality by less croping and more fov
- - [ ] new custom separator
+ - [x] increase image quality by less croping and more fov
+ - [x] new custom separator
  - [ ] add simple api token system for rate limit
  
 # Coverage
