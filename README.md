@@ -1,4 +1,4 @@
-# skin_screnshot
+# skin_screnshot DEAD
 
 > big **love** to **Kaumu** who helped me a lot :)
 
